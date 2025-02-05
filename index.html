@@ -3,56 +3,145 @@
 <head>
     <link rel="icon" type="image/png" href="favicon.png">
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; img-src 'self' data:;">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evulant Media</title>
+    <title>Evulant Media - Powered by Evulant</title>
+    <meta name="description" content="Evulant Media specializes in content creation, digital marketing, and influencer collaborations to amplify brand presence.">
+    <meta name="keywords" content="Evulant Media, content marketing, digital strategy, influencer partnerships, brand consulting, social media">
+    <meta name="author" content="Evulant Media">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Evulant Media - Powered by Evulant">
+    <meta property="og:description" content="Creative content production and strategic digital marketing to enhance brand presence.">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://evulant.media">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Evulant Media - Powered by Evulant">
+    <meta name="twitter:description" content="Expert content creation, digital marketing, and influencer collaborations.">
+    <meta name="twitter:image" content="logo.png">
+
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Evulant Media",
+      "url": "https://evulant.media",
+      "logo": "logo.png",
+      "description": "Evulant Media specializes in content creation, influencer marketing, and digital strategy.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "contact@evulant.media",
+        "contactType": "customer service"
+      },
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Evulant",
+        "url": "https://evulant.co"
+      }
+    }
+    </script>
 </head>
 <body>
-    <div class="container">
-        <img src="logo.png" alt="Evulant Media Logo" class="logo">
-        <h1>Evulant Media</h1>
-        <p>Content, strategy, and marketing solutions to elevate brands and creators.</p>
-        
-        <div class="links">
-            <a href="#about">About Us</a>
-            <a href="#services">Our Services</a>
-            <a href="#contact">Contact Us</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <img src="logo.png" alt="Evulant Media Logo" class="nav-logo">
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
-        
-        <section id="about" class="about">
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <img src="logo.png" alt="Evulant Media Logo" class="hero-logo">
+            <h1>Evulant Media</h1>
+            <p>Powered by Evulant</p>
+            <p>Content, Strategy & Marketing for Modern Brands.</p>
+            <div class="hero-buttons">
+                <a href="https://evulant.co" class="cta-btn">Visit Parent Brand</a>
+                <a href="#contact" class="cta-btn">Work With Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="content-wrapper">
             <h2>About Evulant Media</h2>
-            <p>Evulant Media is dedicated to crafting compelling content and strategic marketing campaigns that drive engagement, visibility, and growth for brands and influencers.</p>
-        </section>
-        
-        <section id="services" class="services">
-            <h2>Our Services</h2>
-            <div class="service-item">
-                <h3>Content Creation</h3>
-                <p>High-quality content production tailored for social media, websites, and digital platforms.</p>
-            </div>
-            <div class="service-item">
-                <h3>Digital Marketing</h3>
-                <p>Comprehensive digital strategies including SEO, paid ads, and organic growth methods.</p>
-            </div>
-            <div class="service-item">
-                <h3>Influencer Partnerships</h3>
-                <p>Connecting brands with top influencers for effective and authentic marketing campaigns.</p>
-            </div>
-            <div class="service-item">
-                <h3>Brand Consulting</h3>
-                <p>Helping brands establish a strong identity and impactful online presence.</p>
-            </div>
-        </section>
-        
-        <section id="contact" class="contact">
-            <h2>Contact Us</h2>
-            <p>Looking to grow your brand with Evulant Media? Let's collaborate.</p>
-            <a href="mailto:evulant@outlook.com" class="contact-btn">Get in Touch</a>
-        </section>
-        
-        <div class="footer">
-            © 2025 Evulant Media. All Rights Reserved.
+            <p>We craft engaging content and strategic marketing campaigns that amplify brand voices, boost visibility, and foster authentic connections.</p>
         </div>
-    </div>
+    </section>
+    
+    <section id="services" class="services">
+        <div class="content-wrapper">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Content Production</h3>
+                    <p>High-quality media creation tailored for social media, web, and digital platforms.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Influencer Partnerships</h3>
+                    <p>Connecting brands with top influencers to maximize authentic engagement.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Digital Marketing</h3>
+                    <p>SEO, paid ads, and data-driven strategies to scale online brand presence.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Brand Storytelling</h3>
+                    <p>Developing compelling narratives that make brands stand out in a crowded space.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="content-wrapper">
+            <h2>Let's Collaborate</h2>
+            <p>Interested in working with Evulant Media? Get in touch today.</p>
+            <a href="mailto:contact@evulant.media" class="contact-btn">Contact Us</a>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>© 2025 Evulant Media. Powered by Evulant. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth Scroll for navigation links
+        document.querySelectorAll('.nav-links a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fade-in animation for sections on scroll
+        const sections = document.querySelectorAll(".content-wrapper");
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("fade-in");
+                }
+            });
+        }, { threshold: 0.2 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
 </body>
 </html>
