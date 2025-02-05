@@ -82,14 +82,14 @@
         </div>
     </header>
 
-    <section id="about" class="about">
+    <section id="about" class="about fade-in">
         <div class="content-wrapper">
             <h2>About Evulant Media</h2>
             <p>We craft engaging content and strategic marketing campaigns that amplify brand voices, boost visibility, and foster authentic connections.</p>
         </div>
     </section>
     
-    <section id="services" class="services">
+    <section id="services" class="services fade-in">
         <div class="content-wrapper">
             <h2>Our Services</h2>
             <div class="services-grid">
@@ -113,7 +113,7 @@
         </div>
     </section>
     
-    <section id="contact" class="contact">
+    <section id="contact" class="contact fade-in">
         <div class="content-wrapper">
             <h2>Let's Collaborate</h2>
             <p>Interested in working with Evulant Media? Get in touch today.</p>
@@ -124,5 +124,35 @@
     <footer class="footer">
         <p>© 2025 Evulant Media. Powered by Evulant. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        // Smooth Scroll for navigation links
+        document.querySelectorAll('.nav-links a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fade-in animation for sections on scroll
+        const sections = document.querySelectorAll(".fade-in");
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = "translateY(0)";
+                }
+            });
+        }, { threshold: 0.2 });
+
+        sections.forEach(section => {
+            section.style.opacity = 0;
+            section.style.transform = "translateY(30px)";
+            section.style.transition = "opacity 0.8s ease-out, transform 0.8s ease-out";
+            observer.observe(section);
+        });
+    </script>
 </body>
 </html>
